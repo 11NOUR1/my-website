@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>What I Learn</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #2980b9;
+            overflow: hidden;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #1c5980;
+        }
+
+        h1, h3 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .section {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 30px auto;
+            width: 90%;
+            max-width: 800px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .section img {
+            display: block;
+            margin: 15px auto;
+            width: 370px;
+            height: 250px;
+            border-radius: 6px;
+        }
+
+        .section-title {
+            color: #2980b9;
+            font-size: 20px;
+            margin-bottom: 10px;
+            text-decoration: underline;
+        }
+
+        /* Back to top button */
+        #topBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 99;
+            font-size: 16px;
+            border: none;
+            outline: none;
+            background-color: #2980b9;
+            color: white;
+            cursor: pointer;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        #topBtn:hover {
+            background-color: #1c5980;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="#software">Software</a>
+        <a href="#hardware">Hardware</a>
+        <a href="#programming">Programming</a>
+        <a href="#multimedia">Multimedia</a>
+        <a href="#data">Data & Presentation</a>
+    </div>
+
+    <h1>Website on What I Learn</h1>
+    <h3>Discover Software • Hardware • Programming • Multimedia • Data & Presentation</h3>
+
+    <div class="section" id="software">
+        <div class="section-title">Software</div>
+        <p>Learn how to use software tools like Google Docs, Translate, Blockly, and Python for digital tasks.</p>
+         <img src="what-is-software-CA-Capterra-Header.png" alt="Software Image">
+    </div>
+
+    <div class="section" id="hardware">
+        <div class="section-title">Hardware</div>
+        <p>Understand the parts of a computer, memory, and operating systems. Learn about physical networks too.</p>
+<img src="Types-of-computer-Hardware.jpg" alt="Software Image">
+
+    </div>
+
+    <div class="section" id="programming">
+        <div class="section-title">Programming</div>
+        <p>Explore how to code with strings, create mobile apps, and use powerful programming languages.</p>
+<img src="images.jpeg" alt="Software Image">
+    </div>
+
+    <div class="section" id="multimedia">
+        <div class="section-title">Multimedia</div>
+        <p>Work with images, audio, and video to present creative digital content.</p>
+<img src=" img0.png" alt="Software Image">
+    </div>
+
+    <div class="section" id="data">
+        <div class="section-title">Data & Presentation</div>
+        <p>Use charts and slides to organize and present data clearly and effectively.</p>
+<img src="  Key-Features-of-Good-Presentation-Software.jpg" alt="Software Image">
+
+    </div>
+
+    <!-- Back to Top Button -->
+    <button onclick="topFunction()" id="topBtn" title="Go to top">↑ Top</button>
+
+    <!-- JS for Back to Top -->
+    <script>
+        let topButton = document.getElementById("topBtn");
+
+        window.onscroll = function () {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                topButton.style.display = "block";
+            } else {
+                topButton.style.display = "none";
+            }
+        };
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+</body>
+</html>
